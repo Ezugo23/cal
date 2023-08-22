@@ -1,27 +1,54 @@
-input{
-  width: 150px;
-  height: 100px;
-  font-size: 75px;
-  border-radius: 10px;
-  margin: 10px;
-  background-color: black;
-  color: white;
-  border-style: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-#form{
-  margin-left: 225px;
-  margin-top: 20px;
-  /*border: medium solid purple;*/
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#263457 ;
 }
-h1{
-  text-align: center;
-  font-size: 80px;
-  margin-right: 150px;
-  margin-top: 20px;
+.container{
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  background: #fff;
+  padding: 10px 20px 20px;
+  border-radius: 8px;
+  -webkit-box-shadow:  9px 10px 10px rgba(0,0,0,.2);
 }
 .display{
-  width: 675px;
-  height: 100px;
-  text-align: center;
-  background-color: #1f80c9;
+  height: 80px;
+  width: 100%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  font-size: 25px;
+  outline: none;
+  border: none;
+  text-align: right;
+  color: black;
+  pointer-events: none;
+}
+.buttons{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.buttons button{
+  padding: 12px 10px;
+  cursor: pointer;
+  border:none;
+  border-radius: 6px;
+  background-color: #eee;
+  font-size: 20px;
+  transition:.3s ease all;
+}
+.buttons button:active{
+  transform: scale(0.99);
+}
+.operator{
+  color: lightblue;
 }
